@@ -16,4 +16,3 @@ def arquivo_existe(nome):
         return False
     else:
         return True
-

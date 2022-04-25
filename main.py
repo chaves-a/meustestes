@@ -4,7 +4,6 @@ arq = 'dados.txt'
 if not arquivo_existe(arq):
     criar_arquivo(arq)
 
-
 resp1 = str(input('Deseja cadastrar uma pessoa? [S/N] ')).strip().upper()[0]
 while True:
     if resp1 in 'S':
@@ -17,7 +16,6 @@ while True:
     else:
         break
 
-
 resp3 = str(input('Deseja imprimir o conteúdo do arquivo? [S/N] ')).strip().upper()[0]
 if resp3 in 'S':
     leitura = open(arq)
@@ -26,7 +24,6 @@ if resp3 in 'S':
         dado[1] = int(dado[1].replace('\n', ''))
         print(f'{dado[0]:<30}{dado[1]:>3} anos')
     leitura.close()
-
 
 resp4 = str(input('Deseja excluir uma pessoa? [S/N] ')).strip().upper()[0]
 if resp4 in 'S':
